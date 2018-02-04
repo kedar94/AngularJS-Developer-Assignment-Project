@@ -11,7 +11,7 @@ Displaying Exchange rate Cryptocurrency Coins in Bar graph using API.
 
 ## Source Code Chart.js 
 
-angular.module('amChartsDirectiveExample',['amChartsDirective']).controller('amChartsController', function ($scope,$http,$rootScope) {
+`angular.module('amChartsDirectiveExample',['amChartsDirective']).controller('amChartsController', function ($scope,$http,$rootScope) {
     $scope.loadChart = function (){
         $scope.res = [];
         $scope.res = $http({
@@ -21,7 +21,7 @@ angular.module('amChartsDirectiveExample',['amChartsDirective']).controller('amC
             console.log(response);
             return(response.data);
           }, function errorCallback(response) {
-        });
+        });`
 
     $scope.amChartOptions = {
         data: $scope.res,
