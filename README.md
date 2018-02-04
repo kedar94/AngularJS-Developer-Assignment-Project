@@ -21,7 +21,7 @@ Displaying Exchange rate Cryptocurrency Coins in Bar graph using API.
             console.log(response);
             return(response.data);
           }, function errorCallback(response) {
-        });`
+        });
 
     $scope.amChartOptions = {
         data: $scope.res,
@@ -56,7 +56,7 @@ Displaying Exchange rate Cryptocurrency Coins in Bar graph using API.
     setInterval(function(){$scope.loadChart()},100000);
 	
 });
-
+`
 
 
 
